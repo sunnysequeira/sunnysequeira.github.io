@@ -1,0 +1,24 @@
+body {
+    background: url("https://as2.ftcdn.net/v2/jpg/02/36/97/45/1000_F_236974595_FufDauKsY3ifrY5nUj9kZFQqtC9pPATU.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.ac1 {
+  width: 100px;
+  height: 100px;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove{
+    from{
+        left: 200px
+        top: 100px;
+    }
+    to{
+        left: 200px
+        top: 500px;
+    }
+}
