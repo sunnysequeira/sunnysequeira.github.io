@@ -4,7 +4,29 @@ body {
     background-size: 100%;
     background-attachment: fixed;
 }
+div {
+    background-color: green;
+    display:flex;
+    width: 100px;
+    height: 100px;
+    /* background: white; */
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    
+}
 
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 550px; background-color: red;}
+  }
+div:hover {
+    background-color: pink;
+}
+
+div img{
+    display: block;
+}
 .ac1 {
   width: 100px;
   height: 100px;
@@ -12,7 +34,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-@keyframes mymove{
+/* @keyframes mymove{
     from{
         left: 200px
         top: 100px;
@@ -21,4 +43,4 @@ body {
         left: 200px
         top: 500px;
     }
-}
+} */
