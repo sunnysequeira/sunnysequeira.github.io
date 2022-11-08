@@ -20,6 +20,7 @@ div {
     from {top: 0px;}
     to {top: 550px; background-color: red;}
   }
+
 div:hover {
     background-color: pink;
 }
