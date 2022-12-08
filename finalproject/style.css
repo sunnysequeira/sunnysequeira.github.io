@@ -1,0 +1,130 @@
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.soup {
+  width: 100px;
+  height: 100px;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.salad {
+  width: 100px;
+  height: 100px;
+  left: 300px; 
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.grapeleaves {
+  width: 100px;
+  height: 100px;
+  left: 600px; 
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.falafel {
+  width: 100px;
+  height: 100px;
+  left: 900px; 
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.içliköfte {
+  width: 100px;
+  height: 100px;
+  left: 1200px; 
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+div {
+    display:flex;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+  }
+
+.lahmacun {
+  width: 100px;
+  height: 100px;
+  left: 1500px; 
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
