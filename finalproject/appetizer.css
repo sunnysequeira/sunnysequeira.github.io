@@ -85,7 +85,7 @@ div {
 }
 
 
-.içliköfte {
+.iclikofte {
   width: 100px;
   height: 100px;
   left: 1100px; 
@@ -101,7 +101,6 @@ div {
     animation: mymove 6s;
     animation-fill-mode: forwards;
 }
-
 
 .lahmacun {
   width: 100px;
