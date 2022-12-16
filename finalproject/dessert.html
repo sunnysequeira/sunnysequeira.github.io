@@ -1,92 +1,344 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>CSS Card Flip</title>
+    <style>
+    body {
+  background-image: url('background8.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
+     @font-face {
+      font-family: "My Custom Font";
+      src: url(mops.ttf) format("truetype");
+  }
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  top: 100px; 
-  left: 600px; 
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 100px; 
-  left: 900px; 
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
+  .centered {
   position: absolute;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: none;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%); 
+}
+
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
+.thecard:hover{
   transform: rotateY(180deg);
 }
-</style>
-</head>
-<body>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="baklava.jpg" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <p>made of filo pastry, baklava is a layered pastry that combines chopped nuts and honey or syrup</p>
-    </div>
-  </div>
-</div>
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="baklava.jpg" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <p>another dessert description</p>
-    </div>
-    <body style="background-color:lightsteelblue;">
-    </body>
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+}
 
-  <p style="text-indent: 500px; font-size: 40px; ">desserts</p>
-  <p style="text-indent: 500px; font-size: 25px; ">baklava... $6.99</p>
-  <p style="text-indent: 500px; font-size: 25px; ">description</p>
-  <p style="text-indent: 500px; font-size: 25px; ">kazandibi... $6.99</p>
-  <p style="text-indent: 500px; font-size: 25px; ">description</p>
-  <p style="text-indent: 500px; font-size: 25px; ">sütlaç... $7.99</p>
-  <p style="text-indent: 500px; font-size: 25px; ">description</p>
-  <p style="text-indent: 500px; font-size: 25px; ">  ekmek kadayif... $8.99</p>
-  <p style="text-indent: 500px; font-size: 25px; ">description</p>
-  <p style="text-indent: 500px; font-size: 25px; ">kunefe... $9.99</p>
-  <p style="text-indent: 500px; font-size: 25px; ">description</p>
-  <p style="text-indent: 500px; font-size: 25px; ">kemal pasha... $6.99 </p>
-  <p style="text-indent: 500px; font-size: 25px; ">description </p>
-  </html>
+.thefront h1, .theback h1{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.thefront p, .theback p{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.maincontainer2{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: none;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+
+.thecard2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard2:hover{
+  transform: rotateY(180deg);
+}
+
+ .thefront2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+.theback2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.thefront2 h1, .theback2 h1{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.thefront2 p, .theback2 p{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.maincontainer3{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: none;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%); 
+}
+
+.thecard3{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard3:hover{
+  transform: rotateY(180deg);
+}
+
+ .thefront3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+.theback3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.thefront3 h1, .theback3 h1{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.thefront3 p, .theback3 p{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.maincontainer4{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: none;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%); 
+}
+
+.thecard4{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard4:hover{
+  transform: rotateY(180deg);
+}
+
+ .thefront4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+.theback4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.thefront4 h1, .theback4 h1{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.thefront4 p, .theback4 p{
+  font-weight: normal;
+  font-size: 12px;
+}
+
+    </style>
+  </head>
+
+  <div class="centered">
+    <p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 30px; "><b>dessert</b></p></div>
+
+  <body>
+    <div class="maincontainer">
+
+      <div class="thecard">
+
+        <div class="thefront"><img src="baklava.jpg" class="center" width = "450" height = "250" ></div>
+
+        <div class="theback"><p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 22px;">baklava &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6.99 </p>
+          <p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 17px;">
+          made of filo pastry, this layered dessert combines chopped nuts and syrup</p></div>
+
+      </div>
+    </div>
+
+    <div class="maincontainer2">
+
+      <div class="thecard2">
+
+        <div class="thefront">
+          <div style = "text-align: center;"> </div>
+
+          <img src="halva.jpg" class="center" width = "500" height = "250" ></div>
+
+          <div class="theback"><p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 22px;">halva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6.99</p>
+            <p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 17px;">
+              a traditional confectionary that fills fried semolina grain and syrup with ice cream </p></div>
+     
+      </div>
+    </div>
+
+    <div class="maincontainer3">
+
+      <div class="thecard3">
+
+        <div class="thefront">
+          <div style = "text-align: center;"> </div>
+
+        <img src="sutlac3.jpg" class="center" width = "500" height = "250" ></div>
+
+        <div class="theback"><p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 22px;">sütlaç &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $7.99</p>
+          <p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 17px;">
+           rice pudding with a caramelized milk layer</p></div>
+
+      </div>
+    </div>
+
+    <div class="maincontainer4">
+
+      <div class="thecard4">
+
+        <div class="thefront">
+          <div style = "text-align: center;"> </div>
+
+          <img src="ekmekkadayifi.jpg" class="center" width = "500" height = "250" ></div>
+
+          <div class="theback"><p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 22px;">ekmek kadayifi  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $7.99</p>
+            <p style="font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 17px;">
+              bread pudding served with kaymak, a clotted cream </p></div>
+
+      </div>
+    </div>
+
+    <p style = "position:fixed; left:1300px; top:630px; font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 25px; "> <a href="https://sunnysequeira.github.io/finalproject/homepage.html">home &#8594;</a></p>
+    <p style = "position:fixed; left:30px; top:630px; font-family: My Custom Font; src: url(mops.ttf) format(truetype); font-size: 25px; "> <a href="https://sunnysequeira.github.io/finalproject/entrees.html">&#8592; entrees </a></p>
+
+  </body>
+</html>
+
+<!-- source: https://www.youtube.com/watch?v=OV8MVmtgmoY -->
