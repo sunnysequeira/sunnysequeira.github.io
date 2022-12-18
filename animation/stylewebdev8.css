@@ -1,9 +1,3 @@
-body {
-    background: url("https://as2.ftcdn.net/v2/jpg/02/36/97/45/1000_F_236974595_FufDauKsY3ifrY5nUj9kZFQqtC9pPATU.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-}
 div {
   
     display:flex;
@@ -18,12 +12,8 @@ div {
 
 @keyframes mymove {
     from {top: 0px;}
-    to {top: 550px;}
+    to {top: 575px;}
   }
-
-div:hover {
-    background-color: pink;
-}
 
 div img{
     display: block;
